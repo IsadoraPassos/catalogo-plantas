@@ -7,5 +7,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-//Route::get('/', [PlantaController::class, 'index'])->name('plantas.index');
 Route::resource('plantas', PlantaController::class);
+Route::get('/', [PlantaController::class, 'index']);
